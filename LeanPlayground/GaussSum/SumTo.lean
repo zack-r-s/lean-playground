@@ -1,4 +1,4 @@
-namespace LeanPlayground
+namespace LeanPlayground.GaussSum
 
 /-- The sum `0 + 1 + ⋯ + n`, defined by recursion. -/
 def sumTo : Nat → Nat
@@ -18,4 +18,4 @@ theorem two_mul_sumTo (n : Nat) : 2 * sumTo n = n * (n + 1) := by
     rw [sumTo, Nat.mul_add, ih]
     grind
 
-end LeanPlayground
+end LeanPlayground.GaussSum
